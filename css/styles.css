@@ -112,6 +112,7 @@ img {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -123,9 +124,8 @@ img {
     ),
     url(../images/hiro-bg.png);
   background-repeat: no-repeat;
-  box-sizing: cover;
+  background-size: cover;
   background-position: center;
-  max-width: 1600px;
 }
 .hero-title {
   margin-bottom: 30px;

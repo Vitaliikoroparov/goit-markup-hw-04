@@ -39,7 +39,6 @@ img {
 	padding-top: 24px;
 	padding-bottom: 25px;
 
-	background-color: var(--header-beckground);
 	border-bottom: 1px solid #ececec;
 }
 
@@ -74,6 +73,7 @@ img {
 .contact-link {
 	display: flex;
 }
+
 .site-nav {
 	display: flex;
 	align-items: center;
@@ -87,7 +87,20 @@ img {
 	line-height: 1.14px;
 	letter-spacing: 0.02em;
 	text-decoration: none;
+	position: relative;
 }
+
+.site-nav .link.current::after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	height: 4px;
+	border-radius: 2px;
+	bottom: -32px;
+	display: block;
+	background-color: var(--accent-color);
+}
+
 .site-nav .link.current {
 	color: var(--accent-color);
 }
@@ -95,6 +108,7 @@ img {
 .site-nav .link:focus {
 	color: var(--accent-color);
 }
+
 .auth-nav {
 	display: inline-flex;
 	align-items: center;
